@@ -1,0 +1,62 @@
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "on-tertiary-fixed": "#001e2c",
+        "primary-fixed-dim": "#ffb86f",
+        "on-error": "#690005",
+        "error-container": "#93000a",
+        "on-surface-variant": "#dbc2ad",
+        "surface-bright": "#363940",
+        "surface-tint": "#ffb86f",
+        "on-error-container": "#ffdad6",
+        "on-primary-fixed": "#2c1600",
+        "secondary-fixed-dim": "#b6c4ff",
+        "on-secondary-fixed": "#00164e",
+        "on-secondary-fixed-variant": "#264191",
+        "on-tertiary": "#00344a",
+        "surface-container-low": "#191c22",
+        "secondary-container": "#264191",
+        "secondary-fixed": "#dce1ff",
+        "on-primary-container": "#653a00",
+        "on-tertiary-container": "#004965",
+        "error": "#ffb4ab",
+        "tertiary-fixed-dim": "#7cd0ff",
+        "inverse-on-surface": "#2e3037",
+        "primary-fixed": "#ffdcbd",
+        "surface": "#10131a",
+        "primary-container": "#ff9900",
+        "on-primary": "#4a2800",
+        "outline": "#a38d7a",
+        "on-tertiary-fixed-variant": "#004c69",
+        "surface-container-high": "#272a31",
+        "secondary": "#b6c4ff",
+        "on-secondary": "#05297a",
+        "outline-variant": "#554434",
+        "on-background": "#e1e2eb",
+        "on-secondary-container": "#9db2ff",
+        "inverse-surface": "#e1e2eb",
+        "on-primary-fixed-variant": "#693c00",
+        "surface-dim": "#10131a",
+        "surface-variant": "#32353c",
+        "primary": "#ffc082",
+        "surface-container-lowest": "#0b0e14",
+        "background": "#10131a",
+        "tertiary": "#8ed5ff",
+        "tertiary-fixed": "#c4e7ff",
+        "tertiary-container": "#04beff",
+        "surface-container": "#1d2026",
+        "inverse-primary": "#8a5100",
+        "surface-container-highest": "#32353c",
+        "on-surface": "#e1e2eb"
+      },
+      fontFamily: {
+        "headline": ["Space Grotesk"],
+        "body": ["Inter"],
+        "label": ["Inter"]
+      },
+      borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }
+    }
+  }
+};

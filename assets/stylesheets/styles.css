@@ -1,0 +1,79 @@
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.glass-card, .glass-panel {
+    background: rgba(50, 53, 60, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.mesh-gradient, .kinetic-mesh {
+    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 153, 0, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 80% 20%, rgba(38, 65, 145, 0.1) 0%, transparent 50%);
+}
+
+.spotlight-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.spotlight-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 153, 0, 0.08) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.spotlight-card:hover::before {
+    opacity: 1;
+}
+
+.orb {
+    position: fixed;
+    pointer-events: none;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: -1;
+    opacity: 0.15;
+    transition: transform 0.2s ease-out;
+}
+
+.timeline-gradient {
+    background: linear-gradient(to bottom, transparent, #ff9900, transparent);
+}
+
+body {
+    min-height: max(884px, 100dvh);
+    overflow-x: hidden;
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+@view-transition {
+    navigation: auto;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.page-transition-out {
+    animation: fadeOut 0.3s ease-in forwards !important;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-10px); }
+}
+
+@keyframes float {
+    from { transform: translate(0, 0); }
+    to { transform: translate(-5%, -5%); }
+}
