@@ -81,7 +81,7 @@
                         </span>
                         <span
                             class="text-[10px] font-bold tracking-widest text-secondary font-['Inter'] uppercase">Available
-                            for System Design</span>
+                            for Cloud and DevOps Roles</span>
                     </div>
                     <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1]">
                         DevOps &amp; <span class="text-primary-container">Cloud Engineer</span>
@@ -103,46 +103,39 @@
                         </a>
                     </div>
                 </div>
-                <!-- Dynamic Circular Portrait Profile -->
-                <div
-                    class="hidden lg:flex lg:col-span-4 lg:col-start-9 items-center justify-center relative w-full h-[600px] group perspective-[1000px]">
+                <!-- Dynamic Portrait Profile -->
+                <div id="portrait-wrapper"
+                    class="hidden lg:flex lg:col-span-4 lg:col-start-9 items-end justify-center relative w-full h-[600px] group pb-0 overflow-visible">
 
-                    <!-- Inner Background Glow -->
-                    <div
-                        class="absolute top-1/2 left-1/2 -ml-[150px] -mt-[150px] w-[300px] h-[300px] rounded-full bg-[#FF9900]/15 blur-[80px] z-0 transition-all duration-[1500ms] ease-out group-hover:scale-[1.3] group-hover:bg-[#FF9900]/25">
-                    </div>
+                    <!-- The Moving Core Group (Holds everything together) -->
+                    <div class="relative z-10 flex items-end justify-center transition-transform duration-700 ease-out group-hover:scale-[1.04] group-hover:-translate-y-4">
+                        
+                        <!-- Background Alignment Wrapper: Zero offset forces the background circle to anchor absolutely flush with the bottom bound of the image -->
+                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[380px] h-[380px] flex items-center justify-center -z-10">
+                            
+                            <!-- Inner Background Glow -->
+                            <div class="absolute w-[300px] h-[300px] rounded-full bg-[#FF9900]/10 blur-[80px] transition-opacity duration-700 opacity-50 group-hover:opacity-100 z-0"></div>
 
-                    <!-- Decorative Diamond 1 Wrapper (Spins on Hover) -->
-                    <div
-                        class="absolute top-1/2 left-1/2 -ml-[180px] -mt-[180px] w-[360px] h-[360px] z-0 group-hover:[animation:spin_15s_linear_infinite]">
-                        <!-- Diamond border graphic -->
-                        <div
-                            class="w-full h-full border-[1.5px] border-[#FF9900]/50 rotate-45 transition-all duration-700 ease-out group-hover:scale-110 group-hover:border-[#FF9900]/80 group-hover:shadow-[0_0_30px_rgba(255,153,0,0.2)]">
+                            <!-- Decorative Diamond 1 Wrapper (Appears and Spins on Hover) -->
+                            <div class="absolute w-[360px] h-[360px] transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:[animation:spin_15s_linear_infinite] pointer-events-none">
+                                <div class="w-full h-full border-[2px] border-[#FF9900] rotate-45 shadow-[0_0_40px_rgba(255,153,0,0.4)]"></div>
+                            </div>
+
+                            <!-- Decorative Diamond 2 Wrapper -->
+                            <div class="absolute w-[440px] h-[440px] transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:[animation:spin_25s_linear_infinite_reverse] pointer-events-none">
+                                <div class="w-full h-full border-[1.5px] border-[#FF9900]/60 rotate-45"></div>
+                            </div>
+
+                            <!-- Solid Background Circle Behind Photo -->
+                            <div class="absolute inset-0 rounded-full bg-surface-container border border-outline-variant/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-colors duration-700 ease-out group-hover:border-[#FF9900]/30 xl:w-[380px]"></div>
+
                         </div>
+
+                        <!-- Main PNG Image overlaid in foreground -->
+                        <img src="assets/images/pratik.png" alt="Pratik Lohar"
+                            class="relative z-10 w-[440px] max-w-none bottom-0 object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)] pointer-events-none" />
                     </div>
 
-                    <!-- Decorative Diamond 2 Wrapper (Spins backwards on Hover) -->
-                    <div
-                        class="absolute top-[50%] left-1/2 -ml-[220px] -mt-[220px] w-[440px] h-[440px] z-0 group-hover:[animation:spin_25s_linear_infinite_reverse]">
-                        <!-- Diamond border graphic -->
-                        <div
-                            class="w-full h-full border border-[#FF9900]/20 rotate-45 transition-all duration-700 ease-out group-hover:scale-105 group-hover:border-[#FF9900]/40">
-                        </div>
-                    </div>
-
-                    <!-- Main Image Circle Container -->
-                    <div
-                        class="relative z-10 w-[400px] h-[400px] rounded-full overflow-hidden border border-outline-variant/30 bg-[#0B0E14] shadow-[0_20px_60px_rgba(0,0,0,0.6)] group-hover:shadow-[0_30px_80px_rgba(255,153,0,0.2)] transition-all duration-700 ease-out transform group-hover:-translate-y-2 group-hover:border-[#FF9900]/30 cursor-pointer">
-
-                        <!-- Smooth Zoom-In hover effect on the photo -->
-                        <img src="assets/images/pratik.jpg" alt="Pratik Lohar"
-                            class="w-full h-full object-cover transition-transform duration-[1500ms] ease-out group-hover:scale-110 scale-100" />
-
-                        <!-- Internal gradient overlay to mimic dark studio lighting at the bottom -->
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-[#0B0E14]/70 via-transparent to-transparent opacity-60 pointer-events-none">
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -204,7 +197,7 @@
                     <p class="text-on-surface-variant max-w-xl mx-auto">The technical stack powering my engineering
                         philosophy.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- AWS Cloud Card -->
                     <div
                         class="spotlight-card glass-card p-8 rounded-xl border border-outline-variant/10 hover:border-primary-container/40 transition-all group">
@@ -228,14 +221,14 @@
                                 class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">CloudFormation</span>
                         </div>
                     </div>
-                    <!-- DevOps CI/CD Card -->
+                    <!-- DevOps Card -->
                     <div
                         class="spotlight-card glass-card p-8 rounded-xl border border-outline-variant/10 hover:border-secondary-fixed/40 transition-all group">
                         <div
                             class="w-12 h-12 rounded bg-secondary-container/10 flex items-center justify-center mb-6 text-secondary">
                             <span class="material-symbols-outlined" data-icon="terminal">terminal</span>
                         </div>
-                        <h3 class="font-headline text-2xl font-bold mb-6">DevOps &amp; CI/CD</h3>
+                        <h3 class="font-headline text-2xl font-bold mb-6">DevOps</h3>
                         <div class="flex flex-wrap gap-2 relative z-10">
                             <span
                                 class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">Docker</span>
@@ -249,27 +242,46 @@
                                 class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">Ansible</span>
                         </div>
                     </div>
-                    <!-- Hardware/Infra Card -->
+                    <!-- Networking Card -->
                     <div
                         class="spotlight-card glass-card p-8 rounded-xl border border-outline-variant/10 hover:border-tertiary-container/40 transition-all group">
                         <div
                             class="w-12 h-12 rounded bg-tertiary-container/10 flex items-center justify-center mb-6 text-tertiary-container">
-                            <span class="material-symbols-outlined" data-icon="memory">memory</span>
+                            <span class="material-symbols-outlined" data-icon="hub">hub</span>
                         </div>
-                        <h3 class="font-headline text-2xl font-bold mb-6">Hardware/Infrastructure</h3>
+                        <h3 class="font-headline text-2xl font-bold mb-6">Networking</h3>
                         <div class="flex flex-wrap gap-2 relative z-10">
                             <span
-                                class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">Bare
-                                Metal</span>
+                                class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">TCP/IP</span>
                             <span
-                                class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">Edge
-                                Computing</span>
+                                class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">Load Balancing</span>
                             <span
-                                class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">Network
-                                Switches</span>
+                                class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">DNS & Routing</span>
                             <span
-                                class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">RAID
-                                Arrays</span>
+                                class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">VPC Peering</span>
+                            <span
+                                class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">API Gateways</span>
+                        </div>
+                    </div>
+                    <!-- System Design Card -->
+                    <div
+                        class="spotlight-card glass-card p-8 rounded-xl border border-outline-variant/10 hover:border-[#FF9900]/40 transition-all group">
+                        <div
+                            class="w-12 h-12 rounded bg-[#FF9900]/10 flex items-center justify-center mb-6 text-[#FF9900]">
+                            <span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+                        </div>
+                        <h3 class="font-headline text-2xl font-bold mb-6">System Design</h3>
+                        <div class="flex flex-wrap gap-2 relative z-10">
+                            <span
+                                class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">Microservices</span>
+                            <span
+                                class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">Scalability</span>
+                            <span
+                                class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">Scaling & Caching</span>
+                            <span
+                                class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">Event-Driven</span>
+                            <span
+                                class="px-3 py-1 bg-surface-container-highest rounded text-sm text-on-surface border border-outline-variant/10">Distributed Systems</span>
                         </div>
                     </div>
                 </div>
@@ -539,6 +551,7 @@
             });
         });
     </script>
+
 
 </body>
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head>
+<html class="dark scroll-smooth" lang="en">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Pratik Lohar - Education</title>
@@ -12,8 +13,8 @@
 <script src="assets/tailwind.config.js"></script>
 <link href="assets/stylesheets/styles.css" rel="stylesheet" />
 
-  </head>
-<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-fixed overflow-x-hidden">
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-fixed overflow-x-hidden">
 <!-- Animated Background Orbs -->
 <div class="orb w-96 h-96 bg-primary-container top-[-10%] left-[-10%]" id="orb-1"></div>
 <div class="orb w-96 h-96 bg-primary-container bottom-[-10%] right-[-10%]" id="orb-2"></div>
@@ -221,6 +222,22 @@
 </div>
 </footer>
 <script>
+    // Mobile Menu Toggle Logic
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+    });
+
+    // Close mobile menu when clicking a link
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('flex');
+        });
+    });
+
     // Spotlight effect for cards
     document.querySelectorAll('.spotlight-card').forEach(card => {
         card.addEventListener('mousemove', e => {
