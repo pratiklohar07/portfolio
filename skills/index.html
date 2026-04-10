@@ -5,10 +5,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Pratik Lohar - Skills Overview</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+
     <script src="../assets/tailwind.config.js"></script>
     <link href="../assets/stylesheets/styles.css" rel="stylesheet" />
 </head>
@@ -48,14 +45,119 @@
 </header>
 
 <main>
-    <section class="min-h-screen flex flex-col items-center justify-center py-32 px-8 z-10 relative text-center">
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-8 z-10 relative">
+        <div class="max-w-7xl mx-auto text-center">
             <span class="font-label text-sm uppercase tracking-[0.3em] text-primary mb-6 block">Capabilities</span>
-            <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight mb-8">Technical <span class="text-primary-container italic">Skills</span> Overview</h1>
-            <p class="text-on-surface-variant max-w-2xl text-xl mb-12 leading-relaxed">Page reserved for future content regarding skill trees, technical assessments, and domain clusters.</p>
-            <div class="flex gap-4">
-               <a href="cloud.html" class="px-8 py-4 bg-primary-container text-on-primary-fixed font-bold rounded-lg hover:bg-primary transition-all">Cloud Details</a>
-               <a href="devops.html" class="px-8 py-4 bg-surface-container-highest text-on-surface font-semibold rounded-lg hover:bg-surface-bright transition-all">DevOps Details</a>
+            <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight mb-8">Core <span class="text-primary-container italic">Expertise</span></h1>
+            <p class="text-on-surface-variant max-w-3xl mx-auto text-xl leading-relaxed">
+                Cloud-focused engineering powered by hands-on AWS operations. Combining deep Linux administration with modern DevOps practices to build scalable, high-availability architectures.
+            </p>
+        </div>
+    </section>
+
+    <!-- Bento Grid Section -->
+    <section class="pb-32 px-8 relative z-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Card 1: AWS -->
+            <div class="spotlight-card glass-card p-8 rounded-2xl border border-outline-variant/20 hover:border-[#FF9900]/40 transition-all group">
+                <div class="w-14 h-14 rounded-lg bg-[#FF9900]/10 flex items-center justify-center mb-6 text-[#FF9900]">
+                    <span class="material-symbols-outlined text-3xl" data-icon="cloud">cloud</span>
+                </div>
+                <h3 class="font-headline text-3xl font-bold mb-3">Amazon Web Services</h3>
+                <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Core expertise in scalable infrastructure, utilizing compute, storage, and networking services to ensure high availability and robust security.</p>
+                <div class="flex flex-wrap gap-2 relative z-10">
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">EC2 &amp; AMI</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">VPC &amp; Subnets</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">S3 (Replication)</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">IAM</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Lambda</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Elastic Load Balancer</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Auto Scaling</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">CloudWatch</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">SNS</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">NAT Gateway</span>
+                </div>
             </div>
+
+            <!-- Card 2: DevOps -->
+            <div class="spotlight-card glass-card p-8 rounded-2xl border border-outline-variant/20 hover:border-blue-400/40 transition-all group">
+                <div class="w-14 h-14 rounded-lg bg-blue-400/10 flex items-center justify-center mb-6 text-blue-400">
+                    <span class="material-symbols-outlined text-3xl" data-icon="integration_instructions">integration_instructions</span>
+                </div>
+                <h3 class="font-headline text-3xl font-bold mb-3">DevOps &amp; Containers</h3>
+                <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Automation and container orchestration ensuring modern, scalable software delivery and streamlined deployment pipelines.</p>
+                <div class="flex flex-wrap gap-2 relative z-10">
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Docker</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Kubernetes</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">GitHub Actions</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Jenkins</span>
+                </div>
+            </div>
+
+            <!-- Card 3: OS & Scripting -->
+            <div class="spotlight-card glass-card p-8 rounded-2xl border border-outline-variant/20 hover:border-green-400/40 transition-all group">
+                <div class="w-14 h-14 rounded-lg bg-green-400/10 flex items-center justify-center mb-6 text-green-400">
+                    <span class="material-symbols-outlined text-3xl" data-icon="terminal">terminal</span>
+                </div>
+                <h3 class="font-headline text-3xl font-bold mb-3">Systems &amp; Scripting</h3>
+                <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Deep-level operating system administration combined with scripting abilities to automate and optimize repetitive administrative tasks.</p>
+                <div class="flex flex-wrap gap-2 relative z-10">
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Linux Administration</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Shell Scripting</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Python</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">SSH &amp; Permissions</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Apache Server</span>
+                </div>
+            </div>
+
+            <!-- Card 4: Version Control -->
+            <div class="spotlight-card glass-card p-8 rounded-2xl border border-outline-variant/20 hover:border-red-400/40 transition-all group">
+                <div class="w-14 h-14 rounded-lg bg-red-400/10 flex items-center justify-center mb-6 text-red-400">
+                    <span class="material-symbols-outlined text-3xl" data-icon="account_tree">account_tree</span>
+                </div>
+                <h3 class="font-headline text-3xl font-bold mb-3">Version Control</h3>
+                <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Expertise in source code management, distributed version control, and collaborative development workflows.</p>
+                <div class="flex flex-wrap gap-2 relative z-10">
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Git</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">GitHub</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Branching &amp; Merging</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">CI/CD Integration</span>
+                </div>
+            </div>
+
+            <!-- Card 5: Databases -->
+            <div class="spotlight-card glass-card p-8 rounded-2xl border border-outline-variant/20 hover:border-yellow-400/40 transition-all group">
+                <div class="w-14 h-14 rounded-lg bg-yellow-400/10 flex items-center justify-center mb-6 text-yellow-400">
+                    <span class="material-symbols-outlined text-3xl" data-icon="database">database</span>
+                </div>
+                <h3 class="font-headline text-3xl font-bold mb-3">Databases</h3>
+                <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Experience with relational and NoSQL databases, including high-scale distributed datastores and caching architectures.</p>
+                <div class="flex flex-wrap gap-2 relative z-10">
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">MySQL</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">PostgreSQL</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">DynamoDB</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">MongoDB</span>
+                </div>
+            </div>
+
+            <!-- Card 6: Networking & Hardware -->
+            <div class="spotlight-card glass-card p-8 rounded-2xl border border-outline-variant/20 hover:border-purple-400/40 transition-all group">
+                <div class="w-14 h-14 rounded-lg bg-purple-400/10 flex items-center justify-center mb-6 text-purple-400">
+                    <span class="material-symbols-outlined text-3xl" data-icon="router">router</span>
+                </div>
+                <h3 class="font-headline text-3xl font-bold mb-3">Networking &amp; Hardware</h3>
+                <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Foundational knowledge of network topology, security mechanisms, hardware components and core IT infrastructure.</p>
+                <div class="flex flex-wrap gap-2 relative z-10">
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">TCP/IP Networking</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Routing &amp; Subnets</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Security Groups</span>
+                    <span class="px-3 py-1 bg-surface-container-highest rounded text-sm font-medium border border-outline-variant/10 text-on-surface">Hardware Diagnostics</span>
+                </div>
+            </div>
+
+        </div>
     </section>
 </main>
 
