@@ -167,6 +167,20 @@
         if(orb1) orb1.style.transform = `translate(${moveX}px, ${moveY}px)`;
         if(orb2) orb2.style.transform = `translate(${-moveX * 0.5}px, ${-moveY * 0.5}px)`;
     });
+
+    // Page transition script
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('a[href]').forEach(link => {
+            link.addEventListener('click', e => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#') && link.target !== '_blank') {
+                    e.preventDefault();
+                    document.body.classList.add('page-transition-out');
+                    setTimeout(() => window.location.href = href, 300);
+                }
+            });
+        });
+    });
 </script>
 </body>
 </html>
